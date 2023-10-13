@@ -1,11 +1,11 @@
 .spostare{
     display: block;
-    animation: sposta 2s linear forwards;
+    animation: sposta 0.3s linear forwards;
 
 }
 
 @keyframes sposta{
-    100% {transform: translate(680px , 270px);}
+    100% {transform: translate(838px , 248px);}
 }
 
 .done{
