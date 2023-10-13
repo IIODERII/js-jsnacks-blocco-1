@@ -7,7 +7,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Array lista</title>
 </head>
-<body>
-    
+
+<body class="bg-secondary text-white">
+    <ul>
+        <li><a href="../array_bonus/index.html" class="text-white">Esercizio Array Bonus</a></li>
+        <li><a href="../array-lista/index.html" class="text-white">Esercizio Array Lista</a></li>
+    </ul>
+
+    <div class="container pt-5">
+        <label for="number-elements">Inserire il numero di elementi che si vuole inserire</label>
+        <input type="text" class="form-control w-50" id="number-elements" name="number-elements" value="">
+
+        <label for="visual-elements" class="mt-3">Inserire il numero di elementi che si vuole visualizzare</label>
+        <input type="text" class="form-control w-50" id="visual-elements" name="visual-elements" value="">
+
+        <button class="btn btn-light mt-3">Crea</button>
+    </div>
+
+    <div id="visual"></div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
