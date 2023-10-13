@@ -1,0 +1,18 @@
+.spostare{
+    display: block;
+    animation: sposta 2s linear forwards;
+
+}
+
+@keyframes sposta{
+    100% {transform: translate(680px , 270px);}
+}
+
+.done{
+    text-decoration: line-through;
+    color: greenyellow;
+}
+
+.done::after{
+    content: '\2705';
+}
