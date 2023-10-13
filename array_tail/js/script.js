@@ -6,7 +6,7 @@ btnEl.addEventListener('click' , function(){
 
     const visual = document.getElementById('visual') ;
 
-    visual.className = 'p-4 mt-4 fs-3 bg-warning d-none';
+    visual.className = 'p-4 mt-4 fs-3 bg-warning d-none text-break';
 
     if(isNaN(numElementi) || isNaN(screenElementi)){
         visual.innerHTML = 'I valori inseriti non solo validi' ;
