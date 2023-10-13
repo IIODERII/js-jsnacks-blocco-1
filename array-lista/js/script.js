@@ -25,16 +25,20 @@ pesca.addEventListener('click' , function(){
     pesca.className= 'spostare'
     frigorifero.push('pesca');
     document.querySelector('ol li:first-child').classList.add('done')
+
+    frigoEl.innerHTML += '<div>' + frigorifero[frigorifero.length-1] + '</div>' ;
+
+
 })
 
 // parte per cercare il melone
 
 const cercatoreCocomeri = document.querySelector('button');
+const message = document.createElement('div');
 
 cercatoreCocomeri.addEventListener('click' , function(){
 
-    const message = document.createElement('div');
-    message.className = 'p-4 m-5 '
+    message.className = 'p-4 m-5 fs-2 fw-bold';
 
     frigoEl.innerHTML = ''
 
@@ -58,5 +62,21 @@ cercatoreCocomeri.addEventListener('click' , function(){
         message.classList.add('bg-danger');
     }
 
-    document.querySelector('body').append(message)
+    document.querySelector('body').append(message);
+})
+
+const noCocomero = document.querySelector('h3');
+
+noCocomero.addEventListener('click' , function(){
+    for(let i = 0 ; i < frigorifero.length ; i++){
+        if(frigorifero[i] === 'cocomero'){
+            frigorifero.splice(i , 1);
+        }
+    }
+
+    frigoEl.innerHTML = '' ;
+
+    for(let i = 0 ; i < frigorifero.length ; i++){
+        frigoEl.innerHTML += '<div>' + frigorifero[i] + '</div>' ;
+    }
 })
